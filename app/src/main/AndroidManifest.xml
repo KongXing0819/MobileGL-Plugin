@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-  <manifest package="com.mgdev.mobilegl">
     <application
         android:allowBackup="true"
         android:extractNativeLibs="true"
@@ -22,19 +21,22 @@
             android:value="true" />
         <meta-data
             android:name="des"
-            android:value="MobileGL(OpenGL 3.2)(Stable:1.21.2+)" />
+            android:value="${des}" />
         <meta-data
             android:name="renderer"
-            android:value="MobileGL:libMobileGL.so:libMobileGL.so" />
+            android:value="${renderer}" />
         <meta-data
             android:name="boatEnv"
-            android:value="DLOPEN=libspirv-cross-c-shared.so:LIBGL_ES=3" />
+            android:value="${boatEnv}" />
         <meta-data
             android:name="pojavEnv"
-            android:value="DLOPEN=libspirv-cross-c-shared.so:LIBGL_ES=3:POJAV_RENDERER=opengles3" />
+            android:value="${pojavEnv}" />
         <meta-data
             android:name="minMCVer"
-            android:value="1.17" />
+            android:value="${minMCVer}" />
+        <meta-data
+            android:name="maxMCVer"
+            android:value="${maxMCVer}" />
 
     </application>
 
