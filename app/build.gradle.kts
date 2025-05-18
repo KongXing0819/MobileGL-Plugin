@@ -54,7 +54,7 @@ android {
 
             manifestPlaceholders["boatEnv"] = mutableMapOf<String,String>().apply {
                 put("LIBGL_ES", "3")
-                put("DLOPEN", "libspirv-cross-c-shared.so,libshaderconv.so")
+                put("DLOPEN", "libspirv-cross-c-shared.so")
             }.run {
                 var env = ""
                 forEach { (key, value) ->
@@ -64,7 +64,7 @@ android {
             }
             manifestPlaceholders["pojavEnv"] = mutableMapOf<String,String>().apply {
                 put("LIBGL_ES", "3")
-                put("DLOPEN", "libspirv-cross-c-shared.so,libshaderconv.so")
+                put("DLOPEN", "libspirv-cross-c-shared.so")
                 put("POJAV_RENDERER", "opengles3")
             }.run {
                 var env = ""
